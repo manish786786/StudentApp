@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>StudentApp</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+	<servlet>
+		<servlet-name>myFirstServlet</servlet-name>
+		<servlet-class>com.app.www.MyFirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myFirstServlet</servlet-name>
+		<url-pattern>/currentdate</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>StudentSearch</servlet-name>
+		<servlet-class>com.app.www.StudentSearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentSearch</servlet-name>
+		<url-pattern>/studentsearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AllStudentView</servlet-name>
+		<servlet-class>com.app.www.AllStudentViewServlet1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AllStudentView</servlet-name>
+		<url-pattern>/allstudentview</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateProfile</servlet-name>
+		<servlet-class>com.app.www.CreateProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CreateProfile</servlet-name>
+		<url-pattern>/createprofile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChangePassword</servlet-name>
+		<servlet-class>com.app.www.ChangePasswordServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/changepassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.app.www.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loggedin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.app.www.Delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/deleted</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Redirect</servlet-name>
+		<servlet-class>com.app.www.Redirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Redirect</servlet-name>
+		<url-pattern>/redirect</url-pattern>
+	</servlet-mapping>
+  
+</web-app>

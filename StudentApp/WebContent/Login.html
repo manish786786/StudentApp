@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+background-image: url("img/login.jpg");
+}
+</style>
+<script src="js/jquery-3.3.1.js"></script>
+ <script>
+$(document).ready(function() {
+    $("body").addClass("animated jello");
+  $("input").addClass("animated rubberBand");
+  
+});
+</script>
+</head>
+<body>
+	<div class="container-fluid">
+        <h1 class="text text-center">Login to StudentApp</h1>
+			<form action="./loggedin" method="post">
+                <div align="center">
+				Reg No:<input type="number" name="regno">
+				Password:<input type="password" name="password">
+                <input type="submit">
+                </div>
+			</form>
+    </div>
+
+</body>
+</html>

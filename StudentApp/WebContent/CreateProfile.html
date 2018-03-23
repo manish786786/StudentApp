@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body{
+    background-image: url("img/form.jpg");
+    }
+    form{
+        float: right;
+    }
+    </style>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+   $(document).ready(function() {
+     
+     $("img").addClass("animated flip");
+     $("select").addClass("animated flip");
+     $("legend").addClass("animated rubberBand");
+     $("th").addClass("animated rubberBand");
+     $("input").addClass("animated fadeInLeftBig");
+ });
+ </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <fieldset>
+            <legend align="center">Student Profile Creation Form</legend>
+
+            <form action="./createprofile" method="post">
+                <table>
+                <tr>
+                <th>RegNo:</th> 
+                <td><input type="text" placeholder="Ex:1" name="regNo"></td>
+                </tr>
+                <tr>
+                <th>FirstName:</th> 
+                <td><input type="text" placeholder="Ex:Manish" name="firstName"></td>
+                </tr>
+                <tr>
+                <th>MiddleName:</th> 
+                <td><input type="text" placeholder="Ex: Devi" name="middleName"></td>
+                </tr>
+                <tr>
+                <th>LastName:</th> 
+                <td><input type="text" placeholder="Ex: Bandewar" name="lastName"></td>
+                </tr>
+                <tr>
+                <th>Guardian FirstName:</th> 
+                <td><input type="text" placeholder="Ex:XXX" name="gFirstName"></td>
+                </tr>
+                <tr>
+                <th>Guardian MiddleName:</th> 
+                <td><input type="text" placeholder="Ex:YYY" name="gMiddleName"></td>
+                </tr>
+                <tr>
+                <th>Guardian LastName:</th> 
+                <td><input type="text" placeholder="Ex:ZZZ" name="gLastName"></td>
+                </tr>
+                <tr>
+                <th>Password:</th> 
+                <td><input type="password" placeholder="Ex:abc" name="password"></td>
+                </tr>
+                <tr>
+                <th>Admin:</th> 
+                    <td><select name="admin">
+                    <option value="none">--Select--</option>
+                    <option value="N">NO</option>
+                    <option value="Y">YES</option>
+                    </select></td>
+                </tr>
+                <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td> 
+                </tr>
+                </table>
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+</html>
